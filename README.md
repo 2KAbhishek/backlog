@@ -8,13 +8,13 @@
 ![Contributors](https://img.shields.io/github/contributors/2kabhishek/backlog?style=plastic&color=f0f&label=Contributors)
 ![License](https://img.shields.io/github/license/2kabhishek/backlog?style=plastic&color=555&label=License)
 
-backlog is a tool that allows developers to change the time of their git commits.
+Backlog is a tool that allows developers to alter the time of their git commits.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `python3`
 
 ## Installing backlog
 
@@ -23,28 +23,33 @@ To install backlog, follow these steps:
 ```bash
 git clone https://github.com/2kabhishek/backlog
 cd backlog
-<install_command>
+# Setup symlink, make sure target directory is added to PATH
+ln -sfnv "$PWD/backlog.py" ~/Applications/bin/backlog
 ```
 
 ## Using backlog
 
 ```bash
 USAGE:
-    command [FLAGS] [OPTIONS]
+backlog [-h] [-d days] [-m minutes] hours
 
-FLAGS:
-    -h, --help              Prints help information.
+Change time of last commit in git.
 
-OPTIONS:
-    -o, --option <value>    Option description. Options are: a, b. [default: a]
+positional arguments:
+  hours                 Number of hours to go back
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d days, --days days  Number of days to go back
+  -m minutes, --minutes minutes
+                        Number of minutes to go back
 
 ```
 
 ### To-Do
 
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
+- [x] Make main script
+- [ ] Add future flag
 
 Hit the :star: button if you found this useful.
 
