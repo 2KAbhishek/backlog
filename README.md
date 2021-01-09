@@ -46,11 +46,6 @@ optional arguments:
 
 ```
 
-### To-Do
-
-- [x] Make main script
-- [ ] Add future flag
-
 Hit the :star: button if you found this useful.
 
 ### More Info
