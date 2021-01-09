@@ -21,3 +21,15 @@ args = parser.parse_args()
 days = args.days
 hours = args.hours
 minutes = args.minutes
+
+
+def get_time(days: int, hours: int, minutes: int) -> str:
+    """Use arguments to get time string in required format, e.g: Sat Jan 9 16:46:28 2021 +0530"""
+    import time
+    back_seconds = (days * 24 * 60 * 60) + (hours * 60 * 60) + (minutes * 60)
+    time_now = time.time()
+    commit_time = time_now - back_seconds
+    return(time.strftime("%a %b %d %H:%M %Y %z", time.localtime(commit_time)))
+
+
+time_str = get_time(days, hours, minutes)
