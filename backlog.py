@@ -32,4 +32,13 @@ def get_time(days: int, hours: int, minutes: int) -> str:
     return(time.strftime("%a %b %d %H:%M %Y %z", time.localtime(commit_time)))
 
 
+def update_commit(time_str: str):
+    """Set environment variables and updates commit time."""
+    import os
+    os.environ["GIT_AUTHOR_DATE"] = time_str
+    os.environ["GIT_COMMITTER_DATE"] = time_str
+    os.system("git commit --reset-author --amend --no-edit")
+
+
 time_str = get_time(days, hours, minutes)
+update_commit(time_str)
