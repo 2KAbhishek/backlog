@@ -8,7 +8,7 @@
 ![Contributors](https://img.shields.io/github/contributors/2kabhishek/backlog?style=plastic&color=f0f&label=Contributors)
 ![License](https://img.shields.io/github/license/2kabhishek/backlog?style=plastic&color=555&label=License)
 
-backlog is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+backlog is a tool that allows developers to change the time of their git commits.
 
 ## Prerequisites
 
