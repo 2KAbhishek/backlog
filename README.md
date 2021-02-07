@@ -31,7 +31,7 @@ ln -sfnv "$PWD/backlog.py" ~/Applications/bin/backlog
 
 ```bash
 USAGE:
-backlog [-h] [-d days] [-m minutes] hours
+    backlog [-h] [-d days] [-m minutes] hours
 
 Change time of last commit in git.
 
@@ -43,6 +43,9 @@ optional arguments:
   -d days, --days days  Number of days to go back
   -m minutes, --minutes minutes
                         Number of minutes to go back
+
+EXAMPLE:
+backlog 12 -d 1 # Changes the last commit time to 1 day 12 hours ago
 
 ```
 
