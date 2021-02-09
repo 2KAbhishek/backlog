@@ -39,5 +39,8 @@ def update_commit(time_str: str):
     os.system("git commit --reset-author --amend --no-edit")
 
 
-time_str = get_time(days, hours, minutes)
-update_commit(time_str)
+if days != 0 or hours != 0 or minutes != 0:
+    time_str = get_time(days, hours, minutes)
+    update_commit(time_str)
+else:
+    parser.print_help()
