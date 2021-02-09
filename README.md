@@ -39,13 +39,13 @@ positional arguments:
   hours                 Number of hours to go back
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -d days, --days days  Number of days to go back
-  -m minutes, --minutes minutes
-                        Number of minutes to go back
+  -h,          --help                  Show this help message and exit
+  -hr hours,   --hours   hours         Number of hours to go back
+  -d  days,    --days    days          Number of days to go back
+  -m  minutes, --minutes minutes       Number of minutes to go back
 
 EXAMPLE:
-backlog 12 -d 1 # Changes the last commit time to 1 day 12 hours ago
+backlog -d 1 -hr 12 # Changes the last commit time to 1 day 12 hours ago
 
 ```
 
